@@ -1,0 +1,138 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={Heiti SC Medium}]{Heiti SC}
+\setCJKmonofont{Songti SC}
+\setCJKsansfont{Heiti SC}
+ \newCJKfontfamily[cuhei]\cuti{Heiti SC Medium}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{陈载春}{}
+      {}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{\cuti 地址}
+    重庆市沙坪坝区
+  \section{\cuti 电话~ QQ~ 微信}
+    +86 136 3789 4552
+    160 152 79
+    czc112358
+  \section{Mail}
+    \href{mailto:chenzaichun@gmail.com}{\textbf{chenzaichun@}\\gmail.com}
+  \section{Web \& Git}
+    \href{http://yesokay.herokuapp.com}{yesokay.herokuapp.com}
+    \href{https://github.com/chenzaichun}{github.com/chenzaichun}
+  \section{\cuti 编程技能}
+    ~
+    \includegraphics[scale=0.62]{img/programming.pdf}
+    ~
+  \section{\cuti 操作系统运维}
+    \textbf{GNU/Linux}\includegraphics[scale=0.16]{img/5stars}
+    \textbf{MacOS}\includegraphics[scale=0.16]{img/4stars}
+    \textbf{Windows}\includegraphics[scale=0.16]{img/4stars}
+    \textbf{Android}\includegraphics[scale=0.16]{img/3stars}
+    \textbf{iOS}\includegraphics[scale=0.16]{img/3stars}
+    \textbf{HPUX}\includegraphics[scale=0.16]{img/2stars}
+    \textbf{Solaris}\includegraphics[scale=0.16]{img/2stars}
+  \section{\cuti 其他技能}
+    ~
+    \includegraphics[scale=0.62]{img/personal.pdf}
+    ~
+  \section{\cuti 语言}
+    \textbf{English}\includegraphics[scale=0.16]{img/3stars}
+\end{aside}
+
+\section{\cuti 重要项目经历}
+\begin{entrylist}
+  \entry
+    {2011.4 - 至今}
+    {\cuti TeMIP Trouble Ticket Liaison}
+    {HP}
+    {项目主要是给电信厂商提供设备告警和 Trouble Ticket 的管理,并和其他 ITSM 系统集成。\\}
+
+    \entry
+    {2014.11 - 2015.2}
+    {\cuti Vision Media Management}
+    {HP}
+    {Vision Media Management 是美国一家电影道具管理和租赁公司。我在项⺫中 负责该公司 iOS 项⺫的开发。该 App 主要是提供给他们的销售人员用来展示 电影中所使用的道具。\\}
+
+    \entry
+    {2010.10 - 2011.4}
+    {\cuti GTS V2}
+    {HP}
+    {该项目主要是给美国通用提供⻋辆自动化测试的工具。我在项目中负责升级 新需求并发布新版本。\\}
+    
+    \entry
+    {2018.12 - 2010.9}
+    {\cuti 东方 Online}
+    {}
+    {3D 武侠⻛格 MMORPG,在项⺫中主要负责服务器端和客户端的开发。 \\}
+
+    \entry
+    {2008.1 - 2008.10}
+    {\cuti 星球计划}
+    {宏信}
+    {3D 科幻⻛格 MMORPG,在项目主要负责客户端逻辑和 UI 的开发。\\}
+
+    \entry
+    {2006.7 - 2017.12}
+    {\cuti 桑德智能⻋载系统}
+    {桑德}
+    {主要负责桑德⻋载智能系统的开发,包括主动防御,GPS 定位,多媒体系统 和移动办公。\\}
+\end{entrylist}
+
+\section{\cuti 高等教育经历}
+\begin{entrylist}
+  \entry
+    {2002 - 2006}
+    {\cuti 软件工程 学士学位}
+    {重庆大学软件学院}
+    {\\}
+  \\}
+\end{entrylist}
+
+\vspace{40pt}
+
+\begin{flushright}
+\emph{二〇一七年二月五日}
+\end{flushright}
+\begin{flushright}
+\emph{陈载春}
+\end{flushright}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}
